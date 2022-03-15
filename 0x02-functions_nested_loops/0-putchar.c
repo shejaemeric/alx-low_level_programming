@@ -11,6 +11,6 @@ int main(void)
 	int i = 0;
 
 	while (i < 8)
-		_putchar(str[i]);
+		_putchar(c);
 	return (0);
 }
