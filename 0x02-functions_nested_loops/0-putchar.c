@@ -7,10 +7,10 @@
 
 int main(void)
 {
-	char str[8] = { '_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\', 'n'};
+	char str[10] = { '_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\', 'n'};
 	int i = 0;
 
-	while (i < 8)
+	while (i < 10)
 	{
 		_putchar(str[i]);
 		i++;
