@@ -8,12 +8,12 @@
 int main(void)
 {
 	char str[8] = { '_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
-	int c = 'h'
+	int c = 'h';
 	int i = 0;
 
 	while (i < 8)
 	{
-		_putchar(c);
+		_putchar(str[i]);
 		i++;
 	}
 	return (0);
