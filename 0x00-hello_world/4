@@ -1,0 +1,7 @@
+#include <stdio.h>
+main(){
+ char str[15];
+ strcpy(str,"")
+ puts
+ return (0)
+}
