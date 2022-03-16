@@ -6,5 +6,6 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-void positive_or_negative(int)
+void positive_or_negative(int);
+int largest_number(int a, int b, int c);
 #endif /* MAIN_H */
