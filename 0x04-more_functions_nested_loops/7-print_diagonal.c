@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-*print_diagonal- prints number 0 to 9
-*@n:number of _ to print
+*print_diagonal- prints \ diagonally
+*@n:number of \ to print
 * Return: void
 */
 
