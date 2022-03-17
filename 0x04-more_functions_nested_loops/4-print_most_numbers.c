@@ -1,9 +1,7 @@
-void print_numbers(void);
-
 #include "main.h"
 
 /**
-*print_most_numbers(void)- checks if char is a digit case
+*print_most_numbers(void)- print most numbers except 2 and 4
 * Return: void
 */
 
@@ -13,6 +11,8 @@ void print_most_numbers(void);
 
 	while (a <= 57)
 	{
+		if (a == 50 || a == 52)
+			break;
 		_putchar(a);
 		a++;
 	}
