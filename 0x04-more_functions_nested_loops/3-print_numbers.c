@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*print_numbers(void)- checks if char is a digit case
+*print_numbers(void)- prints number 0 to 9
 * Return: void
 */
 
