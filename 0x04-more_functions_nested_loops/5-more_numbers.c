@@ -12,7 +12,8 @@ void more_numbers(void)
 	int a;
 	int c;
 
-	while (b <= 10){
+	while (b <= 10)
+	{
 		a = 48;
 		while (a <= 62)
 		{
