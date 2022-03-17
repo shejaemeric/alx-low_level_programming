@@ -5,7 +5,7 @@
 * Return: void
 */
 
-print_numbers(void)
+void print_numbers(void)
 {
 	int a = 48;
 
