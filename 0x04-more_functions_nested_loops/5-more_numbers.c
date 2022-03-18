@@ -1,32 +1,23 @@
-void more_numbers(void);
 #include "main.h"
 
 /**
-*more_numbers(void)- prints number 0 to 9
-* Return: void
-*/
-
+   * more_numbers - a function that prints 10 times the numbers, from 0 to 14,
+   * followed by a new line.
+   * Return: Always 0
+ */
 void more_numbers(void)
 {
-	int b = 0;
-	int a;
-	int c;
+	int i, j = 0;
 
-	while (b <= 10)
+	for (; j < 10; j++)
 	{
-		a = 48;
-		while (a <= 62)
+		for (i = 0; i <= 14; i++)
 		{
-			if (a > 57)
-			{
-				a = a - 9;
-				_putchar(49);
-			}
-			_putchar(a);
-			a++;
+			if (i > 9)
+				_putchar(i / 10 + '0');
+
+			_putchar(i % 10 + '0');
 		}
 		_putchar('\n');
-		b++;
 	}
-
 }

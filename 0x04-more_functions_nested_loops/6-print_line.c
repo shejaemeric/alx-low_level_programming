@@ -1,17 +1,19 @@
 #include "main.h"
 
 /**
-*print_line- prints number 0 to 9
-*@n:number of _ to print
-* Return: void
-*/
-
+ * print_line - a function that draws a straight line in the terminal.
+ * followed by a new line.
+ * @n: An input integer
+ * Return: Always 0
+ */
 void print_line(int n)
 {
-	while (n > 0)
+	int i = 0;
+
+	if (n > 0)
 	{
-		_putchar('_');
-		n--;
+		for (; i < n; i++)
+			_putchar('_');
 	}
 	_putchar('\n');
 }

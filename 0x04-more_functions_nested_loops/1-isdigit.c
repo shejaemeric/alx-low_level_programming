@@ -1,19 +1,23 @@
 #include "main.h"
 
 /**
-*_isdigit(int c)- checks if char is a digit case
-*@c: integer c to check if it is a digit
-* Return: int
-*/
-
+ * _isdigit - A function that checks for a digit (0 through 9).
+ * @c: An input integer
+ * Return: 1 if c is a digit or 0 otherwise
+ */
 int _isdigit(int c)
 {
-	if (c >= 48 && c <= 57)
+	char i = '0';
+	int isdigit = 0;
+
+	for (; i <= '9'; i++)
 	{
-		return (1);
+		if (i == c)
+		{
+			isdigit = 1;
+			break;
+		}
 	}
-	else
-	{
-		return (0);
-	}
+
+	return (isdigit);
 }
