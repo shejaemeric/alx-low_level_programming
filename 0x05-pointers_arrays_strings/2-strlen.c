@@ -3,7 +3,7 @@
 /**
  * _strlen - count char in a string
  * @s: month in number format
- * Return: void
+ * Return: int
  */
 
 int _strlen(char *s)
@@ -16,4 +16,6 @@ int _strlen(char *s)
 			break;
 		count++;
 	}
+
+	return (count);
 }
