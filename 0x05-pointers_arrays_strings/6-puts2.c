@@ -1,3 +1,4 @@
+include "main.h"
 /**
  * puts2 - prints some chars
  * @str: arg1
@@ -6,13 +7,13 @@
 
 void puts2(char *str)
 {
-	int i, count = 0;
+	int i;
 
 	for (i = 0; i >= 0; i++)
 	{
 		if (i % 2 != 0)
 			_putchar(s[i]);
-		if (s[i] == '\0')
+		if (str[i] == '\0')
 			break;
 	}
 	_putchar('\n');
