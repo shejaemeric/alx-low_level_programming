@@ -18,7 +18,6 @@ void print_rev(char *s);
 		arr[i] = str[i];
 		_putchar(str[i]);
 		count++;
-
 	}
 	for (i = count - 1; i >= 0; i--)
 	{
