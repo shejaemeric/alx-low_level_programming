@@ -14,10 +14,10 @@ void puts_half(char *str)
 			break;
 		count++;
 	}
-	if (count % 2 == 0)
-		n = count / 2;
-	else
+	if (count % 2 != 0)
 		n = (count - 1) / 2;
+	else
+		n = count / 2;
 
 	for (i = n ; i <= count - 1; i++)
 	{
