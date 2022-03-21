@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - reset pointer value to 98
- * @n: month in number format
+ * @n: arg1
  * Return: void
  */
 
