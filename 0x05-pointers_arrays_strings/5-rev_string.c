@@ -17,16 +17,16 @@ void rev_string(char *s)
 		count++;
 	}
 
-	int arr[count];
+	int a[count];
 
 	for (i = count - 1; i >= 0; i--)
 	{
-		arr[i] == s[count - 1 - i];
+		a[i] = s[count - 1 - i];
 	}
 
 	for (i = 0; i <= count - 1; i++)
 	{
-		s[i] == arr[i];
+		s[i] = a[i];
 	}
 	_putchar('\n');
 }
