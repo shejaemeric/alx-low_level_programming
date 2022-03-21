@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * print_array - print n elements of a string
@@ -7,11 +8,11 @@
  */
 void print_array(int *a, int n)
 {
-	int i, n, count = 0;
-//////////
+	int i, count = 0;
+
 	for (i = 0; i >= 0; i++)
 	{
-		if (s[i] == '\0')
+		if (a[i] == '\0')
 			break;
 		count++;
 	}
