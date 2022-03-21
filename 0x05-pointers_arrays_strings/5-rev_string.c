@@ -21,7 +21,7 @@ void rev_string(char *s)
 
 	for (i = count - 1; i >= 0; i--)
 	{
-		arr[i] == s[count - i]
+		arr[i] == s[count - 1 - i];
 	}
 
 	for (i = 0; i <= count - 1; i++)
