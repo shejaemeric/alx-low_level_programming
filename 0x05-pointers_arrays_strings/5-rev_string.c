@@ -17,6 +17,7 @@ void rev_string(char *s)
 			break;
 		len++;
 	}
+	len--;
 	for (pos = 0; pos < len - pos ; pos++)
 	{
 		b = s[pos];
