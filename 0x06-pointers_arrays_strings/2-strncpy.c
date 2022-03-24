@@ -1,9 +1,13 @@
-#include "main.h"
-
 /**
- * _strncat - concatenates two strings
- * @dest: arg1
- * @src: arg2
- * @n: arg3
- * Return: char
+ * _strcmp - compares two strings
+ * @dest : destinastion arr
+ * @src : src arr
+ * @n :arg 3
+ * Return: int
  */
+
+char *_strncpy(char *dest, char *src, int n)
+{
+
+	return (dest);
+}
