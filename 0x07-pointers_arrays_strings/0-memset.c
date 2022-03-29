@@ -1,20 +1,19 @@
 #include "main.h"
 
 /**
- * _memset - concatenates n bytes of two strings
- * @s: arg 1
- * @b: arg 2
- * @n: arg 3
- * Return: char
+* _memset - fills memory with a constant byte
+* @s: memory area to fill in
+* @b: constant byte to fill s with
+* @n: number of bytes to write
+*
+* Return: a pointer to the memory area s
 */
 char *_memset(char *s, char b, unsigned int n)
 {
-    int i;
+	unsigned int i;
 
-    for(i = 0; i < n;i++)
-    {
-        *s = b;
-        s++;
-    }
-    return s;
+	for (i = 0; i < n; i++)
+		s[i] = b;
+
+	return (s);
 }
