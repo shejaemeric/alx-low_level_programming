@@ -1,0 +1,8 @@
+{
+	"C_Cpp.errorSquiggles": "Disabled",
+	"files.associations": {
+		"*.ejs": "html",
+		"U.C": "cpp",
+		"0-puts_recursion.C": "cpp"
+	}
+}
