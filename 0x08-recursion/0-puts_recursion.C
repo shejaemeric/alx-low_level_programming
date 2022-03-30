@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*_memset - function........
+*_puts_recursion - function........
 *@s: arg1
 *Return: void
 */
@@ -14,5 +14,5 @@ void _puts_recursion(char *s)
 		return;
 	}
 	_putchar(*s);
-	_puts_recursion(s+1);
+	_puts_recursion(s + 1);
 }
