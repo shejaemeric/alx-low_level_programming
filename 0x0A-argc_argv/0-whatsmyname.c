@@ -9,8 +9,9 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-int main(int argc, char **argv)
+int main(int __attribute__ ((unused)) argc, char **argv)
 {
+
 	printf("%s", argv[argc - argc]);
 	printf("\n");
 	return (0);
