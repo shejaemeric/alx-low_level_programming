@@ -29,9 +29,9 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	str[len + 1] = '\0';
-	while (len > 0)
+	while (len >= 0)
 	{
-		cpy[len] = c;
+		cpy[len] = str[len];
 		len--;
 	}
 	return (cpy);
