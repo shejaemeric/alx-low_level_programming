@@ -21,7 +21,8 @@ char *str_concat(char *s1, char *s2)
 		len2++;
 
 	total = len1 + len2 + 1;
-
+	printf("%d\n",len1);
+	printf("%d\n",len2);
 	cpy = malloc(sizeof(char) * total);
 
 	if (cpy == NULL)
