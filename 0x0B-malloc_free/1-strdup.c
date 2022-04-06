@@ -23,12 +23,11 @@ char *_strdup(char *str)
 		len++;
 	}
 
-	cpy = malloc((sizeof(char) * len) + 1);
+	cpy = malloc((sizeof(str[1]) * len) + 1);
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	str[len + 1] = '\0';
 	while (len >= 0)
 	{
 		cpy[len] = str[len];
