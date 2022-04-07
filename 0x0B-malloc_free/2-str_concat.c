@@ -1,45 +1,52 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
- * *str_concat - put teo strings together
- *@s1:string
- *@s2:string
- * Return: pointer cpy.
+ * str_concat - A function that concatenates two strings
+ * @s1: An input pointer of the first string
+ * @s2: An input pointer of the second string
+ * Return: Apointer to concatened strings or NULL if it str is NULL
  */
-
 char *str_concat(char *s1, char *s2)
 {
-	char *cpy;
-	int len1 = 0, len2 = 0, total, start;
+	char *new_str, *starts1, *starts2;
+	int i = 0, lens1 = 0, lens2 = 0;
 
-	while (s1[len1] != '\0')
-		len1++;
-
-	while (s2[len2] != '\0')
-		len2++;
-
-	total = len1 + len2 + 1;
-	printf("%d\n",len1);
-	printf("%d\n",len2);
-	cpy = malloc(sizeof(char) * total);
-
-	if (cpy == NULL)
+	starts1 = s1;
+	starts2 = s2;
+	if (s1 == NULL)
+		s1 = "";
+	while (*s1)
+	{
+		lens1++;
+		s1++;
+	}
+	s1 = starts1;
+	if (s2 == NULL)
+		s2 = "";
+	while (*s2)
+	{
+		lens2++;
+		s2++;
+	}
+	s2 = starts2;
+	new_str = malloc(sizeof(char) * (lens1 + lens2 + 1));
+	starts1 = new_str;
+	if (new_str == NULL)
 		return (NULL);
-
-	start = total - 1;
-	cpy[start] = '\0';
-
-	while (start >= len2)
+	for (; i < (lens1 + lens2); i++)
 	{
-		cpy[start] = s2[start];
-		start--;
+		if (i < lens1)
+		{
+			new_str[i] = *s1;
+			s1++;
+		}
+		else
+		{
+			new_str[i] = *s2;
+			s2++;
+		}
 	}
-	while (start >= 0)
-	{
-		cpy[total] = s1[start];
-		start--;
-	}
-	return (cpy);
+	new_str[i] = '\0';
+	return (starts1);
 }
