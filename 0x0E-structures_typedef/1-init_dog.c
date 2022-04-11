@@ -1,4 +1,3 @@
-#include "main.h"
 #include "dog.h"
 /**
  * init_dog - writes the character c to stdout
