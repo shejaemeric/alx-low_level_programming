@@ -20,13 +20,13 @@ int main(int argc, char **argv)
 
 	if (argc != 4 || argv[2][1] != '\0')
 	{
-		printf("Error\n");
+		printf("Errornoop\n");
 		exit(98);
 	}
 
 	if ((*argv[2] == '/' || *argv[2] == '%') && b == 0)
 	{
-		printf("Error\n");
+		printf("Errorimp\n");
 		exit(100);
 	}
 
@@ -34,7 +34,7 @@ int main(int argc, char **argv)
 
 	if (func == NULL)
 	{
-		printf("Error\n");
+		printf("Errornull\n");
 		exit(99);
 	}
 
