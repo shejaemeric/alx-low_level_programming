@@ -6,7 +6,7 @@
  */
 int _atoi(char *s)
 {
-	int i, n, count = 0;
+	int i, n, num, count = 0;
 //////////////
 	for (i = 0; i >= 0; i++)
 	{
