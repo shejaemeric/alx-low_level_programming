@@ -1,6 +1,6 @@
-# Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+0x0E-structures_typedef
 
-# General
-What are structures, when, why and how to use them
-How to use typedef
+Structures
+struct (C programming language)
+Documentation: structures
+Typedef and structures
